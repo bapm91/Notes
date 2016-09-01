@@ -3,10 +3,9 @@ package com.example.user.notes;
 public interface NotesRepository {
 
    int getCount();
-   boolean get(int position);
+   Note get(int position);
    boolean delete(int position);
-   boolean create(int position);
-   boolean update(int position);
-   boolean read(int position);
-
+   Note create();
+   Note update(Note note, int position);
+   Note read(int position);
 }
